@@ -1,0 +1,11 @@
+target/
+../.idea/
+*.iml
+.DS_Store
+npm-debug.log
+node/
+node_modules/
+content/src/main/site/assets/build/css/
+content/src/main/site/assets/build/img/
+content/src/main/site/assets/build/js/global.js
+content/src/main/site/assets/build/js/global.min.js

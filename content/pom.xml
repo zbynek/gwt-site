@@ -2,10 +2,15 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.google.gwt.site</groupId>
-  <artifactId>gwt-site</artifactId>
-  <version>2.0-SNAPSHOT</version>
+  <parent>
+    <groupId>org.gwtproject.site</groupId>
+    <version>2.0-SNAPSHOT</version>
+    <artifactId>gwt-site-parent</artifactId>
+  </parent>
+  <artifactId>gwt-site-content</artifactId>
+
   <packaging>jar</packaging>
+
 
   <name>markdown</name>
   <url>http://www.gwtproject.org</url>
@@ -168,7 +173,7 @@
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
-      <version>2.14.0</version>
+      <version>2.7</version>
     </dependency>
   </dependencies>
 
@@ -214,6 +219,7 @@
                   <arguments>
                     concat uglify imagemin less
                   </arguments>
+
                 </configuration>
               </execution>
             </executions>
